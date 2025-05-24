@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SEARCH=$*
+echo "Playing Video based on the search: "$SEARCH
+mpv --loop ytdl://ytsearch10:"$SEARCH"
