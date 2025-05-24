@@ -1,0 +1,1 @@
+[ $(cat /sys/devices/platform/AMD0010\:00/i2c-0/i2c-ELAN062B\:00/input/input5/inhibited) -eq 1 ] && echo 0 | sudo tee /sys/devices/platform/AMD0010\:00/i2c-0/i2c-ELAN062B\:00/input/input5/inhibited > /dev/null || echo 1 | sudo tee /sys/devices/platform/AMD0010\:00/i2c-0/i2c-ELAN062B\:00/input/input5/inhibited > /dev/null
